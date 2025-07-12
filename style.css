@@ -1,1 +1,189 @@
 
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #003366; /* deep blue */
+  padding: 10px 30px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav-links a {
+  color: #ffd700; /* golden */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f0f8ff, #ffffff);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #003366;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #444;
+}
+
+/* Services Section */
+.services {
+  padding: 40px 20px;
+  background-color: #e6f2ff;
+}
+
+.services h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+.services ul {
+  max-width: 800px;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.services li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  padding: 10px;
+  border-left: 5px solid #ffd700;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+/* Inquiry Form */
+.inquiry-form {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.inquiry-form h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.inquiry-form form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.inquiry-form button {
+  background-color: #003366;
+  color: #fff;
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inquiry-form button:hover {
+  background-color: #002244;
+}
+
+/* Contact Section */
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.map iframe {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebc59;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin: 5px 0;
+  }
+}
